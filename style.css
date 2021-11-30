@@ -1,0 +1,107 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+body::before {
+    content: '';
+    background-image: linear-gradient(90deg, 
+    rgba(210,78,136,0.6) 0%, 
+    rgba(81,69,126,.6) 52%, 
+    rgba(30,117,221,.6) 100%),
+    
+    url(img/background.jpg);
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100;
+    z-index: -1;
+    
+}
+
+body {
+    margin: 0;
+    font: 18px/30px monospace;
+}
+
+
+h1, p {
+    text-align: center;
+    color: white;
+}
+h1 {
+margin-top: 5%;
+}
+form {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px 8px 8px 8px;
+    background-color: rgba(81,69,126,.7);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+#name, #email, #number {
+    margin-top: 5px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 15px;
+}
+select {
+    width: 100%;
+    height: 40px;
+}
+
+label, #name, #email, #number, select {
+    display: block;
+}
+
+label[name:"pendidikan"] {
+    display: inline;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(49, 42, 77);
+    color: white;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(135,135,135,0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(135,135,135,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(135,135,135,0.75);;
+    text-decoration: none;
+    transform: scale(1);
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: violet;
+    transform: scale(1.03);
+}
+
+#name:focus, #email:focus, #number:focus{
+    color: blanchedalmond;
+    background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    input[type="submit"]:hover {
+       display: none;
+    }
+}
+    

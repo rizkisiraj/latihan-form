@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form by Siraj</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Form Pembelajaran Mahasiswa</h1>
+    <p id="description">Form ini wajib diisi bagi anda mahasiswa baru tahun 2021</p>
+
+    <form id="survey-form" action="#">
+        <label id="name-label" for="name">
+          Nama <input type="text" placeholder="Enter your name" id="name" required> </label><br>
+        
+        <label for="email">
+          Email
+        <input id="email" type="email" placeholder="example@domain.com" required></label><br>
+
+        <label id="number-label" for="number">Jumlah Anggota Keluarga : 
+        <input id="number" type="number" placeholder="1-12" min="1" max="12" required> </label><br>
+        <label for="gender">Jenis Kelamin : 
+        <select id="dropdown" name="gender">
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wanita</option>
+            <option value="Non Binary">Non Binary</option>
+          </select></label><br>
+
+          <span>Jalur Masuk : </span><br>
+          <label for="SNMPTN">
+           <input type="radio" name="pendidikan" id="SNMPTN" value="SNMPTN">SNMPTN</label>
+          <label for="SBMPTN">
+           <input type="radio" name="pendidikan" id="SBMPTN" Value="SBMPTN">SBMPTN</label>
+          <label for="Mandiri">
+           <input type="radio" name="pendidikan" id="Mandiri" Value="Mandiri">Mandiri</label><br>
+      
+      <label for="KTI">
+        <input type="checkbox" id="KTI" name="Peminatan" value="KTI">KTI</label>
+      <label for="Olahraga">
+        <input type="checkbox" id="Olahraga" name="Peminatan" value="Olahraga">Olahraga</label>
+      <label for="Pramuka">
+        <input type="checkbox" id="Pramuka" name="Peminatan" value="Pramuka" checked>Pramuka</label><br>
+      <label for="textarea">Komentar : <br>
+        <textarea id="textarea" name="textarea"></textarea></label><br>
+      
+      <label for="submit"><input type="submit" id="submit"></label>
+    </form>
+</html>
